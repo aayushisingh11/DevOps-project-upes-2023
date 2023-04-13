@@ -1,0 +1,16 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "url shortening app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "cassandra-driver": "^4.6.3",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
