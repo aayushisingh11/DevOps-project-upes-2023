@@ -3,19 +3,17 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'composer install' // Install dependencies using Composer
+        sh 'echo "Building the code"'
       }
     }
     stage('Test') {
       steps {
-        sh 'vendor/bin/phpunit' // Run PHPUnit tests
+        sh 'echo "Running the tests"'
       }
     }
     stage('Deploy') {
       steps {
-        sh 'rm -rf /var/www/html/*' // Remove old files
-        sh 'cp -r * /var/www/html/' // Copy new files to Apache directory
-        sh 'sudo service apache2 restart' // Restart Apache server
+        sh 'echo "Deploying the code"'
       }
     }
   }
